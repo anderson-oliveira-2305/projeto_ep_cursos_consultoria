@@ -8,22 +8,28 @@ footer {
             font-size: 12px;
         }
         .footer-links a { color: #ccc; margin-right: 10px; }
-        .social-icons span { margin-left: 15px; font-size: 20px; cursor: pointer; color: var(--accent-gold); }
-       
-        /* NOVA REGRA: USAR FLEXBOX PARA ALINHAR ÍCONES SOCIAIS */
+        /* 1. O contêiner principal dos ícones */
         .social-icons {
             display: flex;
-            align-items: center; /* Alinhamento vertical centralizado */
-            gap: 10px; /* Espaçamento horizontal uniforme entre os ícones */
+            align-items: center; /* Alinhamento vertical centralizado de todas as caixas */
+            gap: 15px; /* Espaçamento uniforme entre as caixas */
         }
 
-        /* NOVA REGRA: TAMANHO UNIFORME PARA AS IMAGENS DOS ÍCONES */
-        .social-icons span{
-            width: 24px; /* Tamanho controlado e uniforme */
-            height: auto; /* Mantém a proporção da imagem */
-            display: block; /* Evita espaços em branco extras */
+        /* 2. O 'wrapper' invisível ao redor de cada ícone (A CHAVE DO SUCESSO) */
+        .icon-wrapper {
+            display: inline-flex; /* Vital para alinhar o conteúdo interno */
+            align-items: center; /* Centraliza o ícone verticalmente dentro da sua própria caixa */
+            justify-content: center; /* Centraliza o ícone horizontalmente dentro da sua própria caixa */
+            width: 28px; /* Força uma largura idêntica para todas as caixas */
+            height: 28px; /* Força uma altura idêntica para todas as caixas */
+            line-height: 1; /* Remove qualquer espaço extra de linha invisível de fontes */
+            text-align: center;
         }
 
+        /* 3. Estilo específico se você estiver usando EMOJIS DE TEXTO */
+        .icon-wrapper {
+            font-size: 20px; /* Controla o tamanho do emoji */
+        }
         /* Responsividade Básica */
         @media (max-width: 900px) {
             .dashboard-container { grid-template-columns: 1fr; }
