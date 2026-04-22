@@ -24,13 +24,8 @@
                 <li>Certificados</li>
             </ul>
         </nav>
-        <div class="user-profile">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="João Silva">
-            <span>João Silva</span>
-            <div class="icons">
-                <span>🔔</span>
-                <span>🔍</span>
-            </div>
+        <div class="login-area">
+            <a href="login.php" class="btn-header-login">ÁREA DO ALUNO</a>
         </div>
     </header>
 
@@ -49,11 +44,11 @@
     </section>
 
     <div class="main-actions">
-        <div class="btn-action" onclick="alert('Redirecionando para Seus Cursos')">
+        <div class="btn-action" onclick="window.location.href='login.php'">
             MEUS CURSOS
             <div class="badge-continuar">Continuar Curso</div>
         </div>
-        <div class="btn-action" onclick="alert('Abrindo calendário de consultoria')">
+        <div class="btn-action" onclick="window.location.href='login.php'">
             AGENDAR CONSULTORIA
         </div>
     </div>
@@ -82,40 +77,22 @@
         </div>
 
         <div class="column">
-            <h3 class="section-title">Área do Aluno</h3>
-            <div class="stats-row">
-                <div class="stat-item">
-                    <h4>🎓 5</h4>
-                    <span>Cursos</span>
-                </div>
-                <div class="stat-item">
-                    <h4>📅 1</h4>
-                    <span>Mentoria Agendada</span>
-                </div>
-                <div class="stat-item">
-                    <h4>📜 2</h4>
-                    <span>Certificados</span>
-                </div>
-            </div>
+            <h3 class="section-title">Por que escolher a EP?</h3>
             
-            <div class="chart-container">
-                <canvas id="progressoChart" height="150"></canvas>
-            </div>
-
-            <div class="recent-activities">
-                <div class="activity-item">
-                    <div style="background: var(--accent-gold); width: 25px; height: 25px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white;">🎓</div>
-                    <div>
-                        <strong>Atividades recentes</strong>
-                        <span>25 março - 2026</span>
-                    </div>
+            <div style="margin-top: 20px;">
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--accent-gold); font-size: 16px; margin-bottom: 5px;">🎓 Metodologia Prática</h4>
+                    <p style="font-size: 12px; color: #666; line-height: 1.5;">Nossos cursos são desenhados para você aplicar o conhecimento no seu dia a dia profissional imediatamente.</p>
                 </div>
-                <div class="activity-item">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mentoria">
-                    <div>
-                        <strong>Mentoria am Agendada</strong>
-                        <span>25 março - 2026</span>
-                    </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--accent-gold); font-size: 16px; margin-bottom: 5px;">🤝 Mentoria Exclusiva</h4>
+                    <p style="font-size: 12px; color: #666; line-height: 1.5;">Não seja apenas mais um número. Tenha acompanhamento direto e personalizado com a Diretora Edinalva Pereira.</p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--accent-gold); font-size: 16px; margin-bottom: 5px;">📜 Certificação Reconhecida</h4>
+                    <p style="font-size: 12px; color: #666; line-height: 1.5;">Ao concluir sua jornada, receba certificados que valorizam o seu currículo e abrem novas portas no mercado.</p>
                 </div>
             </div>
         </div>

@@ -4,11 +4,25 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
+            padding: 10px 50px;
             font-size: 12px;
         }
-        .footer-links a { color: #ccc; margin-right: 15px; }
-        .social-icons span { margin-left: 10px; font-size: 16px; cursor: pointer; color: var(--accent-gold); }
+        .footer-links a { color: #ccc; margin-right: 10px; }
+        .social-icons span { margin-left: 15px; font-size: 20px; cursor: pointer; color: var(--accent-gold); }
+       
+        /* NOVA REGRA: USAR FLEXBOX PARA ALINHAR ÍCONES SOCIAIS */
+        .social-icons {
+            display: flex;
+            align-items: center; /* Alinhamento vertical centralizado */
+            gap: 10px; /* Espaçamento horizontal uniforme entre os ícones */
+        }
+
+        /* NOVA REGRA: TAMANHO UNIFORME PARA AS IMAGENS DOS ÍCONES */
+        .social-icons span{
+            width: 24px; /* Tamanho controlado e uniforme */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Evita espaços em branco extras */
+        }
 
         /* Responsividade Básica */
         @media (max-width: 900px) {
