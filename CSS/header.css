@@ -8,9 +8,9 @@ header {
         }
 
         .logo h1 img {
-            margin: 8px auto auto -10px;
-            width: 250px;
-            height: 70px;
+            
+            width: 200px;
+            height: 50px;
         }
 
         nav ul {
@@ -24,18 +24,26 @@ header {
         nav ul li.active { color: var(--accent-gold); border-bottom: 2px solid var(--accent-gold); padding-bottom: 5px; }
         nav ul li:hover { color: var(--accent-gold); cursor: pointer; }
 
-        .user-profile {
+        /* Estilo do botão de Login no Cabeçalho */
+        .login-area {
             display: flex;
             align-items: center;
-            gap: 15px;
-            font-size: 14px;
         }
 
-        .user-profile img {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            object-fit: cover;
+        .btn-header-login {
+            background-color: transparent;
+            color: var(--accent-gold);
+            border: 2px solid var(--accent-gold);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .btn-header-login:hover {
+            background-color: var(--accent-gold);
+            color: var(--text-light);
         }
 
         .icons span { margin-left: 10px; cursor: pointer; }
