@@ -1,0 +1,30 @@
+/* Variáveis de Cores e Estilos Globais */
+:root {
+  --primary-blue: #051429;
+  --accent-gold: #d4a640;
+  --accent-gold-hover: #b88d30;
+  --light-bg: #f9f9f9;
+  --text-dark: #333;
+  --text-light: #fff;
+  --border-color: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educacional - EP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>EP</h1>
+            <span>Edinalva Pereira</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="active">Início</li>
+                <li>Cursos</li>
+                <li>Consultoria</li>
+                <li>Área do Aluno</li>
+                <li>Certificados</li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="João Silva">
+            <span>João Silva</span>
+            <div class="icons">
+                <span>🔔</span>
+                <span>🔍</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo à Sua Jornada<br>de Liderança e Excelência</h2>
+            <p>Plataforma Educacional Edinalva Pereira Diretora - Cursos Online + Consultoria Profissional para o seu Sucesso.</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mentoria e Liderança">
+        </div>
+    </section>
+
+    <div class="main-actions">
+        <div class="btn-action" onclick="alert('Redirecionando para Seus Cursos')">
+            MEUS CURSOS
+            <div class="badge-continuar">Continuar Curso</div>
+        </div>
+        <div class="btn-action" onclick="alert('Abrindo calendário de consultoria')">
+            AGENDAR CONSULTORIA
+        </div>
+    </div>
+
+    <main class="dashboard-container">
+        
+        <div class="column">
+            <h3 class="section-title">Cursos em Destaque</h3>
+            <div class="cursos-grid">
+                <div class="curso-card">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Curso 1">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit para sucesso exp.</p>
+                    <button class="btn-small">ACESSAR CURSO</button>
+                </div>
+                <div class="curso-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Curso 2">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit para sucesso exp.</p>
+                    <button class="btn-small">ACESSAR CURSO</button>
+                </div>
+                <div class="curso-card">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Curso 3">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit para sucesso exp.</p>
+                    <button class="btn-small">ACESSAR CURSO</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3 class="section-title">Área do Aluno</h3>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <h4>🎓 5</h4>
+                    <span>Cursos</span>
+                </div>
+                <div class="stat-item">
+                    <h4>📅 1</h4>
+                    <span>Mentoria Agendada</span>
+                </div>
+                <div class="stat-item">
+                    <h4>📜 2</h4>
+                    <span>Certificados</span>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="progressoChart" height="150"></canvas>
+            </div>
+
+            <div class="recent-activities">
+                <div class="activity-item">
+                    <div style="background: var(--accent-gold); width: 25px; height: 25px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white;">🎓</div>
+                    <div>
+                        <strong>Atividades recentes</strong>
+                        <span>25 março - 2026</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mentoria">
+                    <div>
+                        <strong>Mentoria am Agendada</strong>
+                        <span>25 março - 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3 class="section-title">Certificados</h3>
+            <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Certificado João Silva" class="certificado-img">
+            
+            <h3 class="section-title" style="margin-top: 10px;">Próxima Consultoria</h3>
+            <div class="consultoria-card">
+                <div class="consultoria-info">
+                    <h5>📅 Edinalva Pereira</h5>
+                    <p>25/10/2026, 14h00</p>
+                </div>
+                <button class="btn-entrar" onclick="alert('Entrando na sala de reunião...')">ENTRAR</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="logo">
+            <h1 style="font-size: 20px;">EP</h1>
+            <span>Edinalva Pereira</span>
+        </div>
+        <div class="footer-links">
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="social-icons">
+            <span>📷</span>
+            <span>💼</span>
+            <span>💬</span>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('progressoChart').getContext('2d');
+            
+            // Criando um gradiente para o preenchimento do gráfico
+            let gradient = ctx.createLinearGradient(0, 0, 0, 150);
+            gradient.addColorStop(0, 'rgba(212, 166, 64, 0.5)'); // Dourado transparente
+            gradient.addColorStop(1, 'rgba(212, 166, 64, 0.0)');
+
+            const progressoChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+                    datasets: [{
+                        label: 'Progresso do Aluno',
+                        data: [10, 25, 20, 50, 40, 70],
+                        borderColor: '#d4a640', // Cor Dourada da linha
+                        backgroundColor: gradient,
+                        borderWidth: 2,
+                        pointBackgroundColor: '#051429', // Ponto azul escuro
+                        fill: true,
+                        tension: 0.4 // Deixa a linha suave/curvada
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false } // Oculta a legenda do topo
+                    },
+                    scales: {
+                        x: { grid: { display: false } },
+                        y: { 
+                            beginAtZero: true,
+                            grid: { borderDash: [5, 5] },
+                            ticks: { display: false } // Oculta números do eixo Y para ficar mais clean
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
