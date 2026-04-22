@@ -30,6 +30,19 @@ footer {
         .icon-wrapper {
             font-size: 20px; /* Controla o tamanho do emoji */
         }
+
+        /* Pega o 1º ícone (Câmera) e empurra um pouquinho para CIMA */
+        .social-icons .icon-wrapper:nth-child(1) {
+            transform: translateY(-1px); 
+        }
+
+            /* O 2º ícone (Maleta) já está no meio, então não mexemos nele */
+
+            /* Pega o 3º ícone (Chat) e empurra um pouquinho para BAIXO */
+        .social-icons .icon-wrapper:nth-child(3) {
+            transform: translateY(2px); 
+        }
+
         /* Responsividade Básica */
         @media (max-width: 900px) {
             .dashboard-container { grid-template-columns: 1fr; }
