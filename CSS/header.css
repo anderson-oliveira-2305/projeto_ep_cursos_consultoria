@@ -7,16 +7,10 @@ header {
             padding: 15px 50px;
         }
 
-        .logo h1 {
-            font-size: 28px;
-            font-family: serif;
-            color: var(--text-light);
-        }
-        
-        .logo span {
-            font-size: 10px;
-            display: block;
-            letter-spacing: 1px;
+        .logo h1 img {
+            margin: 8px auto auto -10px;
+            width: 250px;
+            height: 70px;
         }
 
         nav ul {
